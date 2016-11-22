@@ -1,0 +1,10 @@
+{% load wagtailimages_tags wagtailadmin_tags %}
+{% load i18n %}
+
+{% for map in maps %}
+	<div class="col-xs-4 item-thumb">
+		<a href="{{ map.detail_url }}"><img src="{{ map.thumbnail_url }}" />
+		</a>
+	</div>
+{% endfor %}
+

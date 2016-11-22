@@ -1,0 +1,10 @@
+{% load wagtailcore_tags wagtailimages_tags %}
+
+<div class="mine">
+{{page.date}}
+
+</div>
+
+    {% if page.main_image %}
+        {% image page.main_image width-400 %}
+    {% endif %}
